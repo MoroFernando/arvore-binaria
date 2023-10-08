@@ -1,0 +1,44 @@
+Relatório sobre a Implementação de uma Árvore Binária em Java
+
+Introdução
+Este relatório descreve a implementação de uma árvore binária em Java, que permite ao usuário interagir com a árvore por meio de um programa de linha de comando. A árvore binária é uma estrutura de dados hierárquica amplamente utilizada que possui muitas aplicações, incluindo armazenamento e recuperação eficiente de dados.
+
+Estrutura do Programa
+O programa consiste em duas classes principais: Arvore e NodeArvore. Aqui está uma descrição detalhada de cada classe e suas responsabilidades:
+
+Classe NodeArvore
+A classe NodeArvore representa os nós individuais da árvore binária. Cada nó possui os seguintes campos:
+
+Dado: Armazena o valor associado a esse nó.
+NodeEsquerdo: Referência ao nó filho esquerdo.
+NodeDireito: Referência ao nó filho direito.
+
+Esta classe também possui os seguintes métodos:
+
+setDado(Integer Valor): Define o valor do nó.
+getDado(): Retorna o valor do nó.
+setNodeEsquerdo(NodeArvore NodeEsquerdo): Define o nó filho esquerdo.
+getNodeEsquerdo(): Retorna o nó filho esquerdo.
+setNodeDireito(NodeArvore NodeDireito): Define o nó filho direito.
+getNodeDireito(): Retorna o nó filho direito.
+
+Classe Arvore
+A classe Arvore representa a árvore binária e é responsável por gerenciar as operações na árvore. Ela possui os seguintes campos:
+
+Raiz: Referência para o nó raiz da árvore.
+
+Esta classe possui os seguintes métodos:
+
+Arvore(): O construtor inicializa a árvore, definindo a raiz como nula.
+insere(Integer Valor): Insere um novo elemento na árvore. Ele cria um novo nó com o valor especificado e o insere na posição apropriada na árvore.
+busca(Integer Valor): Realiza uma busca na árvore para encontrar um elemento com o valor especificado. Retorna o nó se o valor for encontrado ou null caso contrário.
+remove(Integer Valor): Remove um elemento da árvore com o valor especificado. O método removeRec é usado para realizar a remoção de forma recursiva, mantendo a estrutura da árvore.
+
+Fluxo de Controle
+O programa principal está na classe App. Ele usa um loop infinito para exibir um menu de opções para o usuário. As opções disponíveis incluem:
+
+Inserir elemento: Permite ao usuário inserir um novo valor na árvore.
+Buscar elemento: Permite ao usuário buscar um valor na árvore e exibe uma mensagem indicando se o valor foi encontrado ou não.
+Remover elemento: Permite ao usuário remover um valor da árvore.
+Sair: Encerra o programa.
+O programa continua a solicitar entradas do usuário até que a opção "Sair" seja selecionada.
